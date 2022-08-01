@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    /* remove list title dot symbol */
+    list-style-type: none;
+}
+*{
+    text-decoration: none;
+}
+body{
+    font-family:sans-serif ;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+/* header */
+header{
+    /* hearder ra border color red hela */
+    /* border: 1px solid red; */
+    /* hight 60 hela */
+    height: 60px;
+}
+.navbar{
+    height: 100%;
+    width: 100%;
+    padding: 10px 28px;
+}
+.navbar ul{
+    /* jemit 3 ta janka thila semit achhi */
+    height: 100%;
+/* 1 line re separe hela */
+    display: flex;
+    /* se line end site ku asila */
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar ul li{
+    margin-left: 15px;
+    /* separate kala */
+}
+.navbar ul li a{
+    /* gmail img .. sabu color black kala */
+    color: black;
+}
+.link:hover{
+    /* link tale undferline dela */
+    text-decoration: underline;
+}
+/* J au icone pain */
+.circle-shadow{
+    /* border: 1px solid blue ; */
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle-shadow:hover{
+    /* if we click that it bg color show black */
+    background: rgba(0,0,0,0.1);
+
+}
+.menu-icon,
+.user-icon span{
+    font-size: 18px;
+}
+.user-icon span{
+    color: white;
+}
+/* 2 j icon ra ra bg color heuc */
+.user-icon{
+    background-color: orange;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+}
+/* content */
+/* taku pura color au center ku anila */
+.content-section{
+    /* border: 1px solid red; */
+    flex-wrap: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* taku content-wrapper ra center ku anila */
+.content-wrapper{
+    /* border: 1px solid blue; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+/* google ku size re rakhila */
+.logi-img{
+    width: 300px;
+    margin-bottom: 20px;
+}
+.search-bar{
+    /* search bar ra kama athi heic only icon au boder vitara ra kama */
+    border: 1px solid lightgray;
+    width:600px;
+    height: 45px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+
+}
+.search-bar:hover{
+    box-shadow: 0px 0px 4px  0px #b5b5b5;
+}
+.search-bar i{
+    font-size: 18px;
+    color: gray;
+    margin-right :15px;
+    cursor: pointer;
+}
+.search-bar input{
+    /* input box ra size */
+    flex-grow: 1;
+    height: 20px;
+    margin-right: 15px;
+    font-size: 16px ;
+    /* none kale se jou vitara boder hatijb  but type kale ta vitare asiba*/
+    border: none;
+}
+/*  se vitara ta vdijib*/
+.search-bar input:focus{
+    outline: none;
+
+}
+/* .user-icon{
+    margin-top: 20px;`  
+} */
+.search-btns{
+    margin-top: 40px;
+}
+.search-btns button{
+    height: 40px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    color: black;
+    background-color: #f2f3f4;
+}
+.search-btns button:hover{
+    border: 1px solid lightgray;
+}
+.goole-search-btn{
+    width: 120px;
+}
+.lucky-search-btn{
+    width: 140px;
+}
+.language{
+    margin-top: 20px;
+    font-size: 14px;
+}
+.language a{
+    color: blue;
+}
+.language p a:hover{
+    text-decoration: underline;
+}
+/* footer */
+footer{
+    background-color: #f2f2f2;
+    height: 100px;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.upper-footer{
+    height: 50%;
+    border-radius: 1px solid  lightgray;
+}
+.upper-footer p{
+    color: gray;
+    font-size: 14px;
+}
+.lower-footer{
+    height: 50%;
+    display: flex;
+    /* left & right majhire spece ani la  */
+    justify-content: space-between;
+}
+.lower-footer ul  li a{
+    font-size: 14px;
+    color: gray;
+}
+.lower-footer ul li a:hover{
+    text-decoration: underline;
+}
+.lower-left-footer{
+    display: flex;
+}
+.lower-left-footer li{
+    /* separet karuc */
+    margin-right: 15px;
+}
+.lower-right-footer{
+    display:flex ;
+}
+.lower-right-footer li{
+    margin: 15px;
+}
+/* mobile & tablet */
+@media(max-width:650px){
+    /* search bar */
+    .search-bar{
+        width: 90%;
+    }
+    /* footer */
+    footer{
+        height: 150px;
+    }
+    .upper-footer{
+        height: 50px;
+    }
+    .lower-footer{
+        height: 100px;
+        flex-direction: column;
+    }
+}
